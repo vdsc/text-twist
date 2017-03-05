@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    </head>
+    <style>
+        div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+
+nav {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul  li {
+    text-decoration: none;
+}
+
+div.inputs {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    width : 50%;
+    overflow: hidden;
+}
+    </style>
+    <BODY>
+        <div id="game">
+                <h1 style="color:blue;" class="text-center">TEXT TWIST</h1>
+            <div class="container">
+                <nav>
+                    <ul id="words">
+                    
+                    </ul>
+                </nav>
+                <div class="inputs">
+                    
+                    <div id="rack"></div>
+                    <label>Score: <span id="score"></span></label>
+                    <br/>
+                    <label>Time Left: <span id="timer_div"></span></label>
+                    <br/>
+                    <button id="twist">Twist</button>
+                    <button id="clear">Clear</button>
+                    <button id="enter">Enter</button>
+                    <input type="text" id="input" maxlength="6" style="text-transform:uppercase" />
+                    <br/>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="./script.js"></script>
+    </BODY>
+</HTML>
